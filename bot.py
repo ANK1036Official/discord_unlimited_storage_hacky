@@ -18,6 +18,7 @@ async def on_ready():
 
 @bot.command()
 async def archive(ctx, arg):
+    # Arg is usually a full path to a file.
     if ctx.message.author.id == owner_id:
         inc_number = 1
         file_number = f"{inc_number:03}"
